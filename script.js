@@ -32,10 +32,10 @@ const options = document.querySelector('.launcher-options');
 const musicIcon = document.querySelector('.music');
 const soundIcon = document.querySelector('.sound');
 const steamlinks = [
-    'steam://run/319510',
-    'steam://run/332800',
-    'steam://run/354140',
-    'steam://run/388090',
+    'https://academics-study.github.io/hd_fnaf/1/',
+    'https://academics-study.github.io/hd_fnaf/2/',
+    'https://academics-study.github.io/hd_fnaf/3/',
+    'https://academics-study.github.io/hd_fnaf/4/',
     "javascript:alert('Sorry! We have not added a way to launch FNAF World yet...');",
     'steam://run/506610',
     'steam://run/738060',
@@ -133,7 +133,7 @@ function playButtonHover(cancel) {
 function launcherOptions() {
     if (launcherSHO === 'steam') { launcherSHO = 'off'; options.src = 'images/icons/launcher-off.svg'; }
     else if (launcherSHO === 'off') { launcherSHO = 'html'; options.src = 'images/icons/launcher-html.svg'; }
-    else if (launcherSHO === 'html') { launcherSHO = 'steam'; options.src = 'images/icons/launcher-steam.svg'; }
+    else if (launcherSHO === 'html') { launcherSHO = 'steam'; options.src = 'images/icons/launcher-html.svg'; }
     localStorage.setItem(launcherKey, launcherSHO)
     changeGameSelected(currentIndex);
 }
